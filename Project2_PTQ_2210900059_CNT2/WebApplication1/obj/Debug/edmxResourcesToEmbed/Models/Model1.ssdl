@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="project2_PTQModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CHUCVU">
+    <Key>
+      <PropertyRef Name="Ma_CV" />
+    </Key>
+    <Property Name="Ma_CV" Type="int" Nullable="false" />
+    <Property Name="Ten_CV" Type="char" MaxLength="100" Nullable="false" />
+    <Property Name="Luong_CB" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="Ma_NV" />
+    </Key>
+    <Property Name="Ma_NV" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Ho_Ten" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ngay_Sinh" Type="date" Nullable="false" />
+    <Property Name="Gioi_Tinh" Type="bit" Nullable="false" />
+    <Property Name="Ma_Phong" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="SDT" Type="char" MaxLength="11" />
+    <Property Name="Dia_Chi" Type="nchar" MaxLength="50" />
+    <Property Name="Email" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ngay_Lam" Type="date" Nullable="false" />
+    <Property Name="Ma_chuc_vu" Type="int" />
+  </EntityType>
+  <EntityType Name="PHONGBAN">
+    <Key>
+      <PropertyRef Name="Ma_phong" />
+    </Key>
+    <Property Name="Ma_phong" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Ten_Phong" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="Ma_QL" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="Ma_TK" />
+    </Key>
+    <Property Name="Ma_TK" Type="int" Nullable="false" />
+    <Property Name="Ten_Dang_Nhap" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mat_Khau" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Ma_NV" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Ma_VT" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VAITRO_QUYEN">
+    <Key>
+      <PropertyRef Name="Ma_VT" />
+    </Key>
+    <Property Name="Ma_VT" Type="int" Nullable="false" />
+    <Property Name="Ten_VT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ma_Quyen" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__NHANVIEN__Ma_chu__787EE5A0">
+    <End Role="CHUCVU" Type="Self.CHUCVU" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHUCVU">
+        <PropertyRef Name="Ma_CV" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="Ma_chuc_vu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NHANVIEN__Ma_Pho__778AC167">
+    <End Role="PHONGBAN" Type="Self.PHONGBAN" Multiplicity="1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHONGBAN">
+        <PropertyRef Name="Ma_phong" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="Ma_Phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TAIKHOAN__Ma_NV__7B5B524B">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+    <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="Ma_NV" />
+      </Principal>
+      <Dependent Role="TAIKHOAN">
+        <PropertyRef Name="Ma_NV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TAIKHOAN__Ma_VT__7C4F7684">
+    <End Role="VAITRO_QUYEN" Type="Self.VAITRO_QUYEN" Multiplicity="1" />
+    <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VAITRO_QUYEN">
+        <PropertyRef Name="Ma_VT" />
+      </Principal>
+      <Dependent Role="TAIKHOAN">
+        <PropertyRef Name="Ma_VT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="project2_PTQModelStoreContainer">
+    <EntitySet Name="CHUCVU" EntityType="Self.CHUCVU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHONGBAN" EntityType="Self.PHONGBAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VAITRO_QUYEN" EntityType="Self.VAITRO_QUYEN" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__NHANVIEN__Ma_chu__787EE5A0" Association="Self.FK__NHANVIEN__Ma_chu__787EE5A0">
+      <End Role="CHUCVU" EntitySet="CHUCVU" />
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NHANVIEN__Ma_Pho__778AC167" Association="Self.FK__NHANVIEN__Ma_Pho__778AC167">
+      <End Role="PHONGBAN" EntitySet="PHONGBAN" />
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TAIKHOAN__Ma_NV__7B5B524B" Association="Self.FK__TAIKHOAN__Ma_NV__7B5B524B">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="TAIKHOAN" EntitySet="TAIKHOAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TAIKHOAN__Ma_VT__7C4F7684" Association="Self.FK__TAIKHOAN__Ma_VT__7C4F7684">
+      <End Role="VAITRO_QUYEN" EntitySet="VAITRO_QUYEN" />
+      <End Role="TAIKHOAN" EntitySet="TAIKHOAN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

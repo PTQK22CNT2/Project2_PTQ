@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="project2_PTQModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CHUCVU">
+    <Key>
+      <PropertyRef Name="Ma_CV" />
+    </Key>
+    <Property Name="Ma_CV" Type="Int32" Nullable="false" />
+    <Property Name="Ten_CV" Type="String" MaxLength="100" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Luong_CB" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="NHANVIENs" Relationship="Self.FK__NHANVIEN__Ma_chu__787EE5A0" FromRole="CHUCVU" ToRole="NHANVIEN" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="Ma_NV" />
+    </Key>
+    <Property Name="Ma_NV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Ho_Ten" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ngay_Sinh" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Gioi_Tinh" Type="Boolean" Nullable="false" />
+    <Property Name="Ma_Phong" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SDT" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="Dia_Chi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ngay_Lam" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Ma_chuc_vu" Type="Int32" />
+    <NavigationProperty Name="CHUCVU" Relationship="Self.FK__NHANVIEN__Ma_chu__787EE5A0" FromRole="NHANVIEN" ToRole="CHUCVU" />
+    <NavigationProperty Name="PHONGBAN" Relationship="Self.FK__NHANVIEN__Ma_Pho__778AC167" FromRole="NHANVIEN" ToRole="PHONGBAN" />
+    <NavigationProperty Name="TAIKHOANs" Relationship="Self.FK__TAIKHOAN__Ma_NV__7B5B524B" FromRole="NHANVIEN" ToRole="TAIKHOAN" />
+  </EntityType>
+  <EntityType Name="PHONGBAN">
+    <Key>
+      <PropertyRef Name="Ma_phong" />
+    </Key>
+    <Property Name="Ma_phong" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Ten_Phong" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ma_QL" Type="Int32" />
+    <NavigationProperty Name="NHANVIENs" Relationship="Self.FK__NHANVIEN__Ma_Pho__778AC167" FromRole="PHONGBAN" ToRole="NHANVIEN" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="Ma_TK" />
+    </Key>
+    <Property Name="Ma_TK" Type="Int32" Nullable="false" />
+    <Property Name="Ten_Dang_Nhap" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mat_Khau" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ma_NV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Ma_VT" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NHANVIEN" Relationship="Self.FK__TAIKHOAN__Ma_NV__7B5B524B" FromRole="TAIKHOAN" ToRole="NHANVIEN" />
+    <NavigationProperty Name="VAITRO_QUYEN" Relationship="Self.FK__TAIKHOAN__Ma_VT__7C4F7684" FromRole="TAIKHOAN" ToRole="VAITRO_QUYEN" />
+  </EntityType>
+  <EntityType Name="VAITRO_QUYEN">
+    <Key>
+      <PropertyRef Name="Ma_VT" />
+    </Key>
+    <Property Name="Ma_VT" Type="Int32" Nullable="false" />
+    <Property Name="Ten_VT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ma_Quyen" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TAIKHOANs" Relationship="Self.FK__TAIKHOAN__Ma_VT__7C4F7684" FromRole="VAITRO_QUYEN" ToRole="TAIKHOAN" />
+  </EntityType>
+  <Association Name="FK__NHANVIEN__Ma_chu__787EE5A0">
+    <End Role="CHUCVU" Type="Self.CHUCVU" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHUCVU">
+        <PropertyRef Name="Ma_CV" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="Ma_chuc_vu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NHANVIEN__Ma_Pho__778AC167">
+    <End Role="PHONGBAN" Type="Self.PHONGBAN" Multiplicity="1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHONGBAN">
+        <PropertyRef Name="Ma_phong" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="Ma_Phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TAIKHOAN__Ma_NV__7B5B524B">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+    <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="Ma_NV" />
+      </Principal>
+      <Dependent Role="TAIKHOAN">
+        <PropertyRef Name="Ma_NV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TAIKHOAN__Ma_VT__7C4F7684">
+    <End Role="VAITRO_QUYEN" Type="Self.VAITRO_QUYEN" Multiplicity="1" />
+    <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VAITRO_QUYEN">
+        <PropertyRef Name="Ma_VT" />
+      </Principal>
+      <Dependent Role="TAIKHOAN">
+        <PropertyRef Name="Ma_VT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="project2_PTQEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CHUCVUs" EntityType="Self.CHUCVU" />
+    <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+    <EntitySet Name="PHONGBANs" EntityType="Self.PHONGBAN" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
+    <EntitySet Name="VAITRO_QUYEN" EntityType="Self.VAITRO_QUYEN" />
+    <AssociationSet Name="FK__NHANVIEN__Ma_chu__787EE5A0" Association="Self.FK__NHANVIEN__Ma_chu__787EE5A0">
+      <End Role="CHUCVU" EntitySet="CHUCVUs" />
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NHANVIEN__Ma_Pho__778AC167" Association="Self.FK__NHANVIEN__Ma_Pho__778AC167">
+      <End Role="PHONGBAN" EntitySet="PHONGBANs" />
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TAIKHOAN__Ma_NV__7B5B524B" Association="Self.FK__TAIKHOAN__Ma_NV__7B5B524B">
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+      <End Role="TAIKHOAN" EntitySet="TAIKHOANs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TAIKHOAN__Ma_VT__7C4F7684" Association="Self.FK__TAIKHOAN__Ma_VT__7C4F7684">
+      <End Role="VAITRO_QUYEN" EntitySet="VAITRO_QUYEN" />
+      <End Role="TAIKHOAN" EntitySet="TAIKHOANs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

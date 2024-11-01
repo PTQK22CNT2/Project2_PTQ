@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NHANVIEN.cs",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Models\\NHANVIEN.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\NHANVIEN.cs",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Models\\NHANVIEN.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\NHANVIEN.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:49:46.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAD8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T08:44:01.567Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
