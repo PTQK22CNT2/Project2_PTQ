@@ -7,97 +7,62 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-    .table th, .table td {
-        padding: 12px;
-        text-align: left;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    /* Tiêu đề bảng */
-    .table th {
-        background-color: #343a40;
-        color: white;
-        font-weight: bold;
-    }
-
-    /* Hàng dữ liệu */
-    .table tr:nth-child(even) {
-        background-color: #f8f9fa;
-    }
-
-    /* Hàng khi di chuột vào */
-    .table tr:hover {
-        background-color: #f1f3f5;
-    }
-
-    /* Liên kết hành động */
-    .table td a {
-        color: #007bff;
-        text-decoration: none;
-        font-weight: 500;
-    }
-
-        .table td a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-
-/* Nút tạo mới */
-a.btn-create {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 8px 16px;
-    background-color: #28a745;
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-    a.btn-create:hover {
-        background-color: #218838;
-    }
+/* Tiêu đề bảng */
+.table th {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hàng dữ liệu */
+.table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hàng khi di chuột vào */
+.table tr:hover {
+    background-color: #f1f3f5;
+}
+
 /* Nút Create */
 .btn-create {
-    background-color: #28a745; /* Màu xanh lá cây */
+    background-color: #28a745;
     color: white;
-    padding: 8px 16px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    display: inline-block;
 }
 
-    .btn-create:hover {
-        background-color: #218838;
-    }
+.btn-create:hover {
+    background-color: #218838;
+}
 
-/* Nút Edit */
-.btn-edit {
-    background-color: #ffc107; /* Màu vàng */
-    color: white;
-    padding: 6px 12px;
+/* Nút hành động (Edit, Details, Delete) */
+.btn-action {
+    color: #007bff;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-    .btn-edit:hover {
-        background-color: #e0a800;
-    }
-
-/* Nút Delete */
-.btn-delete {
-    background-color: #dc3545; /* Màu đỏ */
-    color: white;
-    padding: 6px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.btn-action:hover {
+    color: #0056b3;
 }
 
-    .btn-delete:hover {
-        background-color: #c82333;
-    }
+/* Nút Delete với màu đỏ */
+.btn-action.delete {
+    color: #dc3545;
+}
+
+.btn-action.delete:hover {
+    color: #c82333;
+}

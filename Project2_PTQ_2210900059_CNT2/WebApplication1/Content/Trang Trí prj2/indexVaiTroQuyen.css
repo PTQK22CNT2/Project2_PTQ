@@ -1,0 +1,68 @@
+﻿/* Định dạng bảng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Định dạng tiêu đề bảng */
+    .table th {
+        background-color: #343a40;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Định dạng hàng dữ liệu */
+    .table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .table tr:hover {
+        background-color: #f1f3f5;
+    }
+
+/* Nút "Create New" */
+.btn-create {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+    .btn-create:hover {
+        background-color: #0056b3;
+    }
+
+/* Định dạng nút hành động */
+.btn-action {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 4px;
+}
+
+    .btn-action:hover {
+        text-decoration: underline;
+    }
+
+    /* Định dạng riêng cho nút "Delete" */
+    .btn-action.delete {
+        color: #dc3545;
+    }
+
+        .btn-action.delete:hover {
+            color: #c82333;
+            text-decoration: underline;
+        }

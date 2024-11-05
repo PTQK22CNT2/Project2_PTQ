@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
 {
     public class NHANVIENsController : Controller
     {
-        private project2_PTQEntities db = new project2_PTQEntities();
+        private project2_PTQEntities1 db = new project2_PTQEntities1();
 
         // GET: NHANVIENs
         public ActionResult Index()

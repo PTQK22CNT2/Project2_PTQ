@@ -190,6 +190,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Trang Trí prj2\homepage.css" />
+    <Content Include="Content\Trang Trí prj2\indexTaiKhoan.css" />
+    <Content Include="Content\Trang Trí prj2\indexVaiTroQuyen.css" />
+    <Content Include="Content\Trang Trí prj2\indexChucVu.css" />
+    <Content Include="Content\Trang Trí prj2\indexPhongBan.css" />
     <Content Include="Content\Trang Trí prj2\indexNhanVien.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

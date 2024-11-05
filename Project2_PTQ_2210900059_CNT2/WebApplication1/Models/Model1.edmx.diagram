@@ -5,12 +5,12 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="c63c89f3ee914e889be288238d75e66e" Name="Diagram1">
-        <EntityTypeShape EntityType="project2_PTQModel.CHUCVU" Width="1.5" PointX="6.375" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="project2_PTQModel.NHANVIEN" Width="1.5" PointX="4.125" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="project2_PTQModel.PHONGBAN" Width="1.5" PointX="1" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="project2_PTQModel.sysdiagram" Width="1.5" PointX="3.375" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="project2_PTQModel.CHUCVU" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="project2_PTQModel.NHANVIEN" Width="1.5" PointX="4.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="project2_PTQModel.PHONGBAN" Width="1.5" PointX="1" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="project2_PTQModel.sysdiagram" Width="1.5" PointX="0.625" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="project2_PTQModel.TAIKHOAN" Width="1.5" PointX="9.5" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="project2_PTQModel.VAITRO_QUYEN" Width="1.5" PointX="10.875" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="project2_PTQModel.VAITRO_QUYEN" Width="1.5" PointX="9.5" PointY="4.5" IsExpanded="true" />
         <AssociationConnector Association="project2_PTQModel.FK__NHANVIEN__Ma_chu__787EE5A0" ManuallyRouted="false" />
         <AssociationConnector Association="project2_PTQModel.FK__NHANVIEN__Ma_Pho__778AC167" ManuallyRouted="false" />
         <AssociationConnector Association="project2_PTQModel.FK__TAIKHOAN__Ma_NV__7B5B524B" ManuallyRouted="false" />

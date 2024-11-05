@@ -3,12 +3,42 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
-
+<link href="~/Content/Trang Trí prj2/indexPhongBan.css" rel="stylesheet" type="text/css" />
+<h2>Danh sách phòng ban</h2>
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn-create" })
 </p>
+<style>
+    .btn-action {
+        display: inline-block; /* Để các nút hiển thị bên cạnh nhau */
+        padding: 5px 5px; /* Khoảng cách bên trong nút */
+        margin: 5px; /* Khoảng cách giữa các nút */
+        text-decoration: none; /* Bỏ gạch chân */
+        color: #fff; /* Màu chữ trắng */
+        border-radius: 5px; /* Bo góc nút */
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+    }
+
+        /* Kiểu cho nút Edit */
+        .btn-action:nth-child(1) {
+            background-color: sandybrown;
+        }
+
+        /* Kiểu cho nút Details */
+        .btn-action:nth-child(2) {
+            background-color: orangered;
+        }
+
+        /* Kiểu cho nút Delete */
+        .btn-action.delete {
+            background-color: purple;
+        }
+
+        /* Hiệu ứng khi hover */
+        .btn-action:hover {
+            opacity: 0.8; /* Giảm độ mờ khi di chuột vào */
+        }
+</style>
 <table class="table">
     <tr>
         <th>
@@ -29,9 +59,9 @@
             @Html.DisplayFor(modelItem => item.Ma_QL)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Ma_phong.Trim() }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Ma_phong.Trim() }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Ma_phong.Trim() })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Ma_phong.Trim() }, new { @class = "btn-action" }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Ma_phong.Trim() }, new { @class = "btn-action" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Ma_phong.Trim() }, new { @class = "btn-action delete" })
         </td>
     </tr>
 }

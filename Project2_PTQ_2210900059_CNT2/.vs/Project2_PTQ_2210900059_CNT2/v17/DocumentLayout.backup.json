@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\content\\trang tr\u00ED prj2\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\content\\trang tr\u00ED prj2\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NHANVIEN.cs",
-              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Models\\NHANVIEN.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\NHANVIEN.cs",
-              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Models\\NHANVIEN.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\NHANVIEN.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:49:46.309Z",
+              "Title": "homepage.css",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Content\\Trang Tr\u00ED prj2\\homepage.css",
+              "RelativeDocumentMoniker": "WebApplication1\\Content\\Trang Tr\u00ED prj2\\homepage.css",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Content\\Trang Tr\u00ED prj2\\homepage.css",
+              "RelativeToolTip": "WebApplication1\\Content\\Trang Tr\u00ED prj2\\homepage.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-05T07:22:02.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T08:01:50.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
-              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\NHANVIENs\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAD8AAAAqAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T08:44:01.567Z",
+              "WhenOpened": "2024-11-04T08:01:33.334Z",
               "EditorCaption": ""
             }
           ]
