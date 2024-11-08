@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\views\\employee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\views\\employee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|d:\\b\u00E0i t\u1EADp\\project2\\project2_ptq_2210900059_cnt2\\webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{568AB6FB-E0A3-48D9-90C8-8C67F052AAE8}|WebApplication1\\Project2_PTQ_2210900059_CNT2.csproj|solutionrelative:webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Employee\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Employee\\Details.cshtml",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Employee\\Details.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Employee\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T08:12:07.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAHsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T07:49:49.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\b\u00E0i t\u1EADp\\project2\\Project2_PTQ_2210900059_CNT2\\WebApplication1\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:10:34.556Z",
+              "WhenOpened": "2024-11-08T07:47:55.76Z",
               "EditorCaption": ""
             }
           ]

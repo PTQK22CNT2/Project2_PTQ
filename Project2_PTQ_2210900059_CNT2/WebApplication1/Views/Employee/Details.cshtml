@@ -1,0 +1,163 @@
+﻿@model WebApplication1.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Thông tin chi tiết</h2>
+
+<!-- Thêm CSS vào thẻ style -->
+<style>
+    /* Cấu hình chung cho trang Details */
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 900px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Tiêu đề */
+    h2 {
+        text-align: center;
+        color: #28a745; /* Màu xanh lá */
+        font-family: 'Arial', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        border: 1px solid #28a745;
+        margin-bottom: 20px;
+    }
+
+    /* Cấu hình cho danh sách chi tiết */
+    .dl-horizontal {
+        padding: 0;
+        margin: 0;
+    }
+
+        .dl-horizontal dt {
+            width: 30%;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .dl-horizontal dd {
+            margin-left: 30%;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Tạo sự cách biệt cho các mục */
+        .dl-horizontal dt, .dl-horizontal dd {
+            margin-bottom: 15px;
+        }
+
+    /* Cấu hình cho nút Back to List */
+    .back-button {
+        display: inline-block;
+        padding: 8px 15px;
+        margin-top: 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div class="container">
+    <h4>NHANVIEN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ho_Ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ho_Ten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngay_Sinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngay_Sinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gioi_Tinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gioi_Tinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dia_Chi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dia_Chi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngay_Lam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngay_Lam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CHUCVU.Ten_CV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHUCVU.Ten_CV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PHONGBAN.Ten_Phong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHONGBAN.Ten_Phong)
+        </dd>
+
+    </dl>
+    <p>
+        <a href="@Url.Action("Index")" class="back-button">Back to List</a>
+    </p>
+</div>
